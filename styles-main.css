@@ -181,7 +181,7 @@ main > div{
 																			/*Image-Carousel*/
 
 #image-carousel{
-	position: absolute !important;
+	height: 45vh;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
