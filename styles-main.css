@@ -260,7 +260,7 @@ main > div{
 }
 
 .main-content-container{
-	/*border: 2px solid yellow;*/
+	border: 2px solid yellow;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -284,7 +284,7 @@ main > div{
 }
 
 .l-r-c > div{
-	/*border: 0.1px solid white;*/
+	border: 0.1px solid white;
 	margin: 5px 4px;
 	width: 30%;
 	height: 90%;
@@ -708,4 +708,25 @@ main > div{
 
 .trending-card p{
 	font-size: 1.2rem;
+}
+
+																
+																/*ASIDE*/
+
+aside{
+	display: inline-block;
+	color: white;
+}
+
+.aside-header-container{
+	border: 1px solid yellowgreen;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.aside-header-container div{
+	flex-direction: column;
 }
