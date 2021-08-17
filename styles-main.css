@@ -1,6 +1,6 @@
 body{
 	background-color: #292929;
-	position: relative;
+	/*position: absolute;*/
 }
 
 /*to align items properly*/
@@ -12,6 +12,8 @@ h1, h2, h3, h4, h5, h6, p{
 	border: 1px solid white;
 	background-color: #292929;
 	height: 85px;
+	min-height: 80px;
+	width: auto;
 	/*min-height: 80px; */
 	display: flex;
 	flex-direction: row;
@@ -25,8 +27,9 @@ h1, h2, h3, h4, h5, h6, p{
 	padding-right: 5%;
 	transition: all 1s ease-in-out;
 	overflow: hidden;
+	box-sizing: border-box;
 	z-index: 50000;
-}
+}	
 
 .header > div{
 	display: inline-block;
@@ -127,42 +130,59 @@ h1, h2, h3, h4, h5, h6, p{
 	transform: translateX(-3.6rem);
 }
 
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
 
 /*MAIN*/
 
 #main-aside{
-	/*border: 2px solid yellow;*/
-	height: 100vh;
-	width: 90vw;
-	position: inherit;
+	border: 2px solid yellow;
+	height: 100%;
+	width: 90%;
+	position: fixed;
 	left: 5%;
-	top: 13%;
+	top: 11vh;
+	margin-left: auto;
+	margin-right: auto;
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	/*flex-direction: row;*/
 	justify-content: space-around;
 }
 
 main{
-	
+	display: inline-block;
 	/*position: absolute; */
 	display: flex;
 	/*border: 2px solid white;*/
+	padding-bottom: 12vh;
 	height: inherit;
-	width: 70%;
+	width: 75%;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	overflow: scroll;
+	top: 0;
+	left: 0;
 }
 
 aside{
 	/*position: absolute;*/
+	display: inline-block;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	position: relative;
 	display: flex;
 	border:2px solid green;
-	height: 100%;
-	width: 25%;
+	height: inherit;
+	overflow: scroll;
+	width: 23%;
 }
 
 main > div{
@@ -181,14 +201,14 @@ main > div{
 																			/*Image-Carousel*/
 
 #image-carousel{
-	height: 45vh;
+	height: 43vh;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
 	margin-top: 9vh;
-	margin-bottom: 9vh;
+	margin-bottom: 8vh;
 	transition: all 1s ease-in-out;
 }
 
@@ -376,7 +396,7 @@ main > div{
 
 #artists{
 	box-sizing: border-box;
-	height: 30vh;
+	height: 27vh;
 }
 
 .artist-container{
@@ -656,15 +676,36 @@ main > div{
 	justify-content: flex-start;
 	overflow: hidden;
 	color: white;
+	row-gap: 8px;
 }
 .trending-card div{
 	overflow: hidden;
-	height: 80%;
+	align-self: center;
+	height: 75%;
 	width: 95%;
-
+	margin-top: 4px;
+	transition: 0.5s all ease-in-out;
 }
 
 .trending-card div img{
 	height: 100%;
 	width: 100%;
+}
+
+#trending-hindi{
+	margin-top: -5px;
+	padding-bottom: 15%;
+}
+
+.trending-card div:hover{
+	box-shadow: 0px 0px 10px 1px white;
+}
+
+.trending-card span{
+	font-size: 0.9rem;
+	font-family: cursive;
+}
+
+.trending-card p{
+	font-size: 1.2rem;
 }
