@@ -132,9 +132,9 @@ h1, h2, h3, h4, h5, h6, p{
 
 #main-aside{
 	border: 2px solid yellow;
-	height: 100%;
-	width: 90%;
-	position: fixed;
+	height: 100vh;
+	width: 90vw;
+	position: inherit;
 	left: 5%;
 	top: 13%;
 	box-sizing: border-box;
@@ -434,38 +434,50 @@ main > div{
 
 .station-container{
 	width: 100%;
-	height: 92%;
-	border: 1px solid yellow;
+	/*height: 92%;*/
+	border: 2px solid yellow;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	/*flex-direction: column;*/
 	align-items: center;
 	box-sizing: border-box;
+	margin-top: 40px;
+	background-image: linear-gradient(to top, rgb(61,70,79) 2%, #e7627d 18%, #b8235a 34%, #801357 45%, #3d1635 62%, #1c1a27 81%);;
 }
 
 .station-boxes{
 	width: 29.2%;
 	height: 30vh;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	box-sizing: border-box;
+	min-width: 180px;
+	margin: 5vh 0px;
 }
 
 .genre-container{
 	width: 70.1%;
-	height: 99%;
-	border: 1px solid white;
+	height: 38vh;
+	/*border: 1px solid white;*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	column-gap: 4px;
+	position: relative;
 }
 
 #station-1{
 	position: absolute;
 	background-image: linear-gradient(indianred, yellow);
 	box-shadow: 3px -4px 3px 1px rgba(0, 0, 0, 0.6);
-	width: 9.5vw;
-	height: 30vh;
+	width: 55%;
+	height: 95%;
 	z-index: 8;
 	display: flex;
 	flex-wrap: wrap;
@@ -480,8 +492,8 @@ main > div{
 	position: absolute;
 	background-image: linear-gradient(cyan, green);
 	box-shadow: 3px -4px 3px 1px rgba(0, 0, 0, 0.6);
-	width: 12vw;
-	height: 24vh;
+	width: 67%;
+	height: 80%;
 	z-index: 7;
 	display: flex;
 	flex-wrap: wrap;
@@ -497,8 +509,8 @@ main > div{
 	position: absolute;
 	background-image: linear-gradient(purple, red);
 	box-shadow: 3px -4px 3px 1px rgba(0, 0, 0, 0.6);
-	width: 14.5vw;
-	height: 17vh;
+	width: 79%;
+	height: 65%;
 	z-index: 6;
 	display: flex;
 	flex-wrap: wrap;
@@ -525,8 +537,133 @@ main > div{
 	width: 8rem;
 }
 
-#station-boxes div span{
+.station-boxes div span{
 	font-weight: bold;
 }
 
-#
+.genre-box{
+	/*border: 1px solid white;*/
+	height: 44%;
+	width: 20%;
+	border-radius: 50%;
+	color: white;
+	overflow: hidden;
+	position: relative;
+}
+
+.genre-box span{
+	position: absolute;
+	font-weight: 400;
+	top: 42.5%;
+	left: 2.69rem;
+	z-index: 4;
+	color: white;
+	font-size: 24px;
+	text-shadow: 5px 5px 5px black;
+	font-family: serif;
+}
+
+.genre-box img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+}
+
+.genre-box:hover img{
+	opacity: 1;
+}
+
+
+														/*Leisure*/
+.leisure{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	/*margin-top: 10vh !important;*/
+}
+
+.leisure-container{
+	margin-top: 5vh;
+	display: inline-block;
+	border: 1px solid blue;
+	height: 30vh;
+	width: 32.8%;
+	overflow: hidden;
+	position: relative;
+}
+
+.leisure-image{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: 0.5s all ease-in-out;
+
+}
+
+.leisure-image img{
+	height: 30vh;
+	opacity: 0.6;
+	background-size: cover;
+	background-blend-mode: multiply;
+	/*max-width: 100%;*/
+}
+
+.leisure-name{
+	position: absolute;
+	top: 44%;
+	left: 39%;
+	color: white;
+	z-index: 3;
+}
+
+.leisure-name span{
+	font-size: 24px;
+	font-family: serif;
+	font-weight: 800;
+	text-shadow: 5px 5px 5px black;
+	filter: contrast(150%);
+}
+
+.leisure-container:hover .leisure-image{
+	transform: translateX(10px) scale(1.5);
+}
+
+
+												
+														/*Trending*/
+
+.trending-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	/*column-gap: 3px;*/
+	border: 1px solid yellow;
+	position: relative;
+}
+
+.trending-card{
+	border: 1px solid red;
+	height: 30vh;
+	width: 10vw;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+.trending-card div{
+	overflow: hidden;
+	height: 80%;
+	width: 95%;
+
+}
+
+.trending-card div img{
+	height: 100%;
+	width: 100%;
+}
