@@ -146,55 +146,52 @@ button:focus {
 }
 
 
-/*Main + Aside*/
+/*---------------               Main + Aside             ---------------------*/
 
 #main-aside{
 	border: 2px solid yellow;
 	height: 100%;
-	width: 90%;
+	width: 95%;
 	position: fixed;
-	left: 5%;
+	left: 2.5%;
 	top: 15vh;
+	right: 2.5%;
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	/*flex-direction: row;*/
-	justify-content: space-between;
+	justify-content: space-around;
 }
+
+/*------------------                Main             ----------*/
 
 main{
 	display: inline-block;
 	/*position: absolute; */
-	display: flex;
 	border: 2px solid white;
 	padding-bottom: 12vh;
 	height: inherit;
 	width: 75%;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+	
 	overflow: scroll;
 	top: 0;
 	left: 0;
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
-main > div{
-	/*position: absolute;*/
-	/*display: inline-block;*/
-	position: relative;
-	height: auto;
-	padding: 5px;
-	margin: 10px;
-	border: 2px ridge red;
-	width: 100%;
-	box-sizing: border-box;
-}
 
 aside{
 	/*position: absolute;*/
-	/*display: inline-block;*/
+	display: inline-block;
+	padding-bottom: 12vh;
 	top: 0;
 	right: 0;
 	color: white;
@@ -207,3 +204,174 @@ aside{
 	display: inline-block;
 
 }
+
+																					
+
+																					/*MAIN*/
+#jumbotron-container{
+	height: auto;
+	width: 100%;
+
+	box-sizing: border-box;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.jumbotron-cover-pic{
+	border: 1px solid yellow;
+	width: 45%;
+	height: 55vh;
+	min-width: 250px;
+}
+
+.jumbotron-cover-pic img{
+	height: 100%;
+	width: 100%;
+}
+
+.playlist-details{
+	border: 1px solid yellow;
+	height: 40vh;
+	width: 53%;
+	min-width: 300px;
+	padding: 0px 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.playlist-name{
+	height: 20%;
+	width: 100%;
+	border: 1px solid cyan;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.band-name{
+	color: whitesmoke;
+	height: 100%;
+}
+
+.band-name h1{
+	font-family: sans-serif;
+	margin: 0px;
+}
+
+.band-name span{
+	font-size: 1rem;
+	/*margin: 0.5rem;*/
+	margin-bottom: 0px;
+	color: ghostwhite;
+	font-weight: lighter;
+}
+
+.followers{
+	margin-top: -8%;
+	height: inherit;
+	color: ghostwhite;
+	font-size: 1.5rem;
+}
+
+.playlist-desc{
+	color: ghostwhite;
+	margin-top: 0;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+.playlist-desc p{
+	text-align: justify;
+	line-height: 1.3;
+	word-spacing: 0.1rem;
+
+	box-sizing: border-box;
+}
+
+.playlist-controls{
+	margin-top: 5%;
+	height: auto;
+	width: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	box-sizing: border-box;
+}
+
+
+.play-button{
+	width: auto;
+}
+
+
+
+.play-button p{
+	font-size: 0.9rem;
+	margin: 1rem;
+	margin-bottom: 0;
+	color: yellow;
+}
+
+
+.btn-grad {
+	background-image:  linear-gradient(to right, gray 25%, black 50%);
+}
+
+.btn-grad{
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;            
+	/*box-shadow: 0 0 20px #eee;*/
+	/*border-radius: 10px;*/
+	border: none;
+	display: block;
+}
+
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+         
+.follow-button{
+	margin: 10px;
+	padding: 12px 45px;
+	background-image: linear-gradient(to right, gray 25%, black 50%);
+	margin-top: -10px;
+	transition: 0.5s;
+	background-size: 200% auto;
+	/*transition: 1s all ease-in-out;*/
+}
+    
+.follow-button button{
+	border: 2px solid black;
+	background: transparent;
+	border: none;
+	font-size: 1rem;
+	color: white;	
+} 
+
+.follow-button:hover{
+	background-position: right center;
+}
+         

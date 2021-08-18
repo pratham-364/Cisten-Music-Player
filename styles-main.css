@@ -10,7 +10,6 @@ h1, h2, h3, h4, h5, h6, p{
 /*header class*/
 .header{
 	/*border: 1px solid white;*/
-	background-image: linear-gradient(to left, #434343 5%, black 100%);
 	
 	height: 85px;
 	min-height: 80px;
@@ -30,6 +29,11 @@ h1, h2, h3, h4, h5, h6, p{
 	overflow: hidden;
 	box-sizing: border-box;
 	z-index: 50000;
+	transition: 1s all ease-in-out;
+}
+
+.header:hover{
+	background-image: linear-gradient(to left, #434343 5%, black 100%);
 }	
 
 .header > div{
@@ -910,3 +914,5 @@ aside .menu-content a:hover{
 	font-size: 1.5rem;
 	margin-left: 1.6vw;
 }
+
+
