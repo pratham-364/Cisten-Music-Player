@@ -828,7 +828,7 @@ aside .menu-content a:hover{
 	left: 5%;
 	box-sizing: border-box;
 	/*border: 2px solid white;*/
-	background-image: linear-gradient(to left, brown 0%, black 10%, brown 45%, black 90%, brown 100%);
+	background-image: linear-gradient(to left, #5f4646 0%, black 10%, #5f4646 45%, black 95%, #5f4646 100%);
 	align-items: center;
 }
 
