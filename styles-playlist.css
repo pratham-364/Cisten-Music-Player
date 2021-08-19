@@ -1,6 +1,7 @@
 body{
 	background-image: linear-gradient(to right, #434343 0%, black 100%);
 	/*position: absolute;*/
+	/*color: white;*/
 }
 
 /*to align items properly*/
@@ -171,7 +172,7 @@ main{
 	display: inline-block;
 	/*position: absolute; */
 	border: 2px solid white;
-	padding-bottom: 12vh;
+	padding-bottom: 14%;
 	height: inherit;
 	width: 75%;
 	
@@ -185,13 +186,14 @@ main{
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	color: white;
 }
 
 
 aside{
 	/*position: absolute;*/
 	display: inline-block;
-	padding-bottom: 12vh;
+	padding-bottom: 14%;
 	top: 0;
 	right: 0;
 	color: white;
@@ -201,8 +203,6 @@ aside{
 	height: inherit;
 	overflow: scroll;
 	width: 23%;
-	display: inline-block;
-
 }
 
 																					
@@ -330,7 +330,7 @@ aside{
 
 
 .btn-grad {
-	background-image:  linear-gradient(to right, gray 25%, black 50%);
+	background-image: linear-gradient(to right, #424242 0%, black 50%, #424242 100%);
 }
 
 .btn-grad{
@@ -356,7 +356,7 @@ aside{
 .follow-button{
 	margin: 10px;
 	padding: 12px 45px;
-	background-image: linear-gradient(to right, gray 25%, black 50%);
+	background-image: linear-gradient(to right, #424242 0%, black 50%, #424242 100%);
 	margin-top: -10px;
 	transition: 0.5s;
 	background-size: 200% auto;
@@ -375,3 +375,168 @@ aside{
 	background-position: right center;
 }
          
+/*--------------             Playlist Section        ----------------*/
+
+#playlist-songs{
+	height: auto;
+	width: 100%;
+	margin-top: 5vh;
+	border: 2px solid white;
+	display:  flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.song-container{
+	border: 1px solid yellow;
+	width: 100%;
+	height: 9vh;
+	margin-bottom: 1.5vh;
+	min-width: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}	
+
+.song-container-left{
+	border: 1px solid green;
+	width: 60%;
+	height: inherit;
+	min-width: 300px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.song-container-left img{
+	height: 80%;
+	width: 7vh;
+	margin-left: 1rem;
+}
+
+.song-container-left > span{
+	font-size: 0.9rem;
+	margin-left: 1rem;
+}
+
+.song-container-left p{
+	margin-left: 0;
+	margin-left: 1rem;
+}
+
+.song-container-right{
+	border: 1px solid white;
+	width: 15%;
+	height: inherit;
+	min-width: 130px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right;
+	align-items: center;
+
+	box-sizing: border-box;
+}
+
+.song-container-right i{
+	font-size: 0.9rem;
+	margin: 1.5rem;
+}
+
+.gradient-animation{
+	background-image: linear-gradient(to left, #262626 20%, black 40%, #262626 80%);
+	transition: 0.7s;
+	background-size: 200% auto;
+}
+
+.gradient-animation:hover{
+	background-position: right center;
+}
+
+
+/*-----------     Aside       ----------*/
+
+/*Aside Section Heading*/
+.aside-section-heading{
+	margin-top: 3vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	font-family: sans-serif;
+}
+
+.aside-section-heading h1{
+	margin-bottom: 1.4rem;
+}
+
+.aside-section-heading span{
+	font-size: 1rem;
+	text-align: right;
+	color: lightgray;
+
+	margin-bottom: 2vh;
+}
+
+/*----------       Similar Artists Section --------*/
+
+#similar-artist{
+	width: 100%;
+	height: auto;
+	
+	border: 1px solid yellow;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+
+	box-sizing: border-box;
+}
+
+.artist-container{
+	width: 100%;
+	height: 11vh;
+
+	border: 1px solid cyan;
+
+	margin-bottom: 1.7vh ;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	box-sizing: border-box;
+
+	/*overflow: hidden;*/
+	min-width: 230px;
+	position: relative;
+}
+
+.artist-container-left{
+	height: inherit;
+	width: 70%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content :space-around;
+	align-items: center;
+}
+
+.artist-container-left img{
+	height: 100%;
+	width: 11vh;
+}
+
+.artist-container-left:hover{
+	opacity: 0.6;
+}
+
