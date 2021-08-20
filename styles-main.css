@@ -433,7 +433,8 @@ main > div{
 
 .artist-content span{
 	color: white;
-	font-family: fantasy;
+	margin-top: 5px;
+	font-family: cursive monospace;
 }
 
 .artist-content{
@@ -711,13 +712,17 @@ main > div{
 	width: 100%;
 }
 
+#trending-english{
+	margin-top: 5vh;
+}
+
 #trending-hindi{
-	margin-top: -5px;
-	padding-bottom: 15%;
+	margin-top: 5vh;
+	padding-bottom: 18%;
 }
 
 .trending-card div:hover{
-	box-shadow: 0px 0px 10px 1px white;
+	box-shadow: 0px 0px 10px 4px white;
 }
 
 .trending-card span{
@@ -728,6 +733,7 @@ main > div{
 .trending-card p{
 	font-size: 1.2rem;
 }
+
 
 																
 																/*ASIDE*/
