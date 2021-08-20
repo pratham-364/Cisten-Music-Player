@@ -843,7 +843,7 @@ aside .menu-content a:hover{
 
 .song-pic img{
 	height: 90%;
-	width: 75%;
+	width: 100%;
 }
 
 .favourite-icon{
@@ -916,8 +916,8 @@ aside .menu-content a:hover{
 	background-color: #F1F3F4;
 	border-radius: 12%;
 	transform: scale(1.2);
-	margin-left: 1.0rem;
-	margin-right: 1.0rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
 }
 
 .player-controller div{
