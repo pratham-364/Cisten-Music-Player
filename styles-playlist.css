@@ -412,7 +412,7 @@ aside{
 
 .song-container-left{
 	/*border: 1px solid green;*/
-	width: 60%;
+	width: 75%;
 	height: inherit;
 	min-width: 300px;
 
@@ -475,6 +475,10 @@ aside{
 
 
 /*-----------     Aside       ----------*/
+
+#slider{
+	display: none;
+}
 
 /*Aside Section Heading*/
 .aside-section-heading{
@@ -818,11 +822,12 @@ aside{
 	position: relative;
 	right: 0;
 	color: white;
+	margin-right: 4vh;
 }
 
 #expand i{
 	font-size: 1.5rem;
-	margin-left: 1.6vw;
+	margin-left: 1.2rem;
 }
 
 .aside-song-container{
@@ -845,6 +850,7 @@ aside{
 	align-self: center;
 }
 
+
 .song-index{
 	height: auto !important;
 	width: 1rem !important;
@@ -858,6 +864,11 @@ aside{
 .song-pic img{
 	height: 100%;
 	width: 100%;
+}
+
+#footer p{
+	color: white; 
+	font-family: cursive;
 }
 
 .favourite-icon{
@@ -881,4 +892,10 @@ aside{
 	font-size: 0.9rem;
 	font-family: cursive;
 	font-weight: lighter;
+}
+
+#random-icon{
+	color: white; 
+	margin-left: 2.5vw; 
+	margin-top: 5px;
 }

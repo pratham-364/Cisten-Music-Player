@@ -1,9 +1,14 @@
 
-/* ---------------                      BreakPoint 1 - 1280px         -----------------------*/
-@media screen and (max-width: 1280px){
+
+/* ---------------                      BreakPoint 1 - 1200px         -----------------------*/
+@media screen and (max-width: 1200px){
 
 	/*remove menu on nav bar*/
 	#menu{
+		display: none;
+	}
+
+	.favourites-button{
 		display: none;
 	}
 
@@ -15,8 +20,9 @@
 		display: none;
 	}
 
-	#image-carousel div{
-		min-width: 195px;
+	.artist-container-left img {
+	    height: 100%;
+	    width: 8vh;
 	}
 
 }
@@ -24,13 +30,6 @@
 
 /* ---------------                      BreakPoint 2 - 970px         -----------------------*/
 @media screen and (max-width: 970px) {
-
-	.l-r-c:nth-child(2n+1) {
-    	border-right: 0px solid cyan;
-	}
-	.l-r-c:nth-child(1), .l-r-c:nth-child(2) {
-    border-bottom: 0px solid cyan;
-	}
 
 	.user-pic:hover #username{
 		font-size: 20px;
@@ -41,17 +40,28 @@
 }
 
 
-/* ---------------                      BreakPoint 3 - 900px         -----------------------*/
+/* ---------------                      BreakPoint 2 - 900px         -----------------------*/
 @media screen and (max-width: 900px) {
 
-	#random-icon{
+	#more i{
 		display: none;
 	}
-}
+
+	
+	#jumbotron-container{
+		justify-content: space-around;
+	}
+
+	.jumbotron-cover-pic{
+		width: 100%;
+	}
+
+	.playlist-details{
+		width: 100%;
+		margin-top: 2vh;
+	}
 
 
-/* ---------------                      BreakPoint 3 - 800px         -----------------------*/
-@media screen and (max-width: 800px){
 	/*Introduce Slider for Aside section*/
 	#slider{
 		
@@ -59,16 +69,16 @@
 		position: fixed;
 		right: -5%;
 		top: 10vh;
-		color: white;
+
 		width: 7%;
 		height: 60%;
 		border: 2.2px solid red;
 		border-right: none;
-
+		color: white;
 		writing-mode: vertical-rl;
 		text-orientation: upright;
 
-		letter-spacing: -0.3rem;
+		letter-spacing: -0.1rem;
 
 		text-align: center;
 
@@ -86,7 +96,7 @@
 	}
 
 	.main-section{
-		width: 90%;
+		width: 95%;
 		transition: all ease-in-out 0.9s;
 	}
 
@@ -105,6 +115,23 @@
 		right: 10%;
 	}
 
+
+}
+
+
+/* ---------------                      BreakPoint 3 - 800px         -----------------------*/
+@media screen and (max-width: 800px){
+
+	/*Music Player Bar*/
+	#more{
+		display: none;
+	}
+
+	.current-song-image-container{
+		width: 7vh;
+		height: 80%;
+	}
+
 	/*nav bar*/
 	.notification-bell{
 		display: none !important;
@@ -118,8 +145,6 @@
 		transform: translateX(-3.9rem);
 	}
 
-
-	/*Music Player Bar*/
 	#footer p{
 		display: none;
 	}
@@ -140,10 +165,6 @@
 
 	.player-controller audio{
 	font-size: 0.9rem;
-
-	border-right: 2px solid #242425;
-	border-left: 2px solid #242425;
-
 	transform: scale(1.2);
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
@@ -167,7 +188,7 @@
 /* ---------------                      BreakPoint 4 - 700px         -----------------------*/
 @media screen and (max-width: 700px){
 
-	.search-bar{
+.search-bar{
 		display: none !important;
 	}
 
@@ -200,38 +221,45 @@
 	.song-description span{
 		display: table-caption;
 	}
-	/*.player-controller audio{
-		width: 100%;
-		font-size: 0.9rem;
 
-		border-right: 1px solid #242425;
-		border-left: 1px solid #242425;
-
-		margin-left: -10%;
-		margin-right: 0;
-
-	}
-*/
 	#random-icon{
 		display: inline-block;
 	}
+
 }
 
 
 
 /* ---------------                      BreakPoint 5 - 550px         -----------------------*/
 @media screen and (max-width: 550px){
-
-	#image-carousel{
-		margin-top: 10vh;
+	
+	.song-description span{
+		font-size: 13px;
 	}
 
-	.search-bar{
-		display: none !important;
+	.aside-song-container{
+		min-width: auto;
+	}
+ 	
+ 	#random-icon{
+		display: none;
+	}
+
+	.player-controller audio{
+		font-size: 0.9rem;
+	}
+
+	#expand i{
+		font-size: 1.2rem;
+		margin: 0.2rem;
+	}
+
+	.footer-container {
+    	width: 13%;
 	}
 
 	.player-controller {
-    width: 50%;
+    	width: 50%;
 	}
 
 	#cb2{
@@ -242,32 +270,38 @@
 		display: none;
 	}
 
+	.song-description{
+		display: none;
+	}
 
-	#random-icon{
-		margin-left:10px;
+	.aside-song-container{
+		justify-content: flex-start;
+	}
+
+	.aside-song-container{
+ 	   min-width: 340px;
+	}
+
+}
+
+
+/* ---------------                      BreakPoint 5 - 480px   [ FOR MOBILE ]        -----------------------*/
+@media screen and (max-width: 480px){ 
+
+	
+
+	.aside-song-container{
+		height: 43vh;
+	}
+
+	.song-pic{
+		width: 93%;
 	}
 
 	.song-description{
-		display: none;	
+		display: none;
 	}
 
-	#expand{
-		margin-right: 2vh;
-	}
- 	
-	.aside-song-container > div{
-		width: 40%;
-	}
-
-	#audio-control audio{
+	/* PlayList  */
 	
-		font-size: 0.9rem;
-	}
-
-
-	#expand i{
-		font-size: 1.2rem;
-		margin: 0.8rem;
-	}
 }
-

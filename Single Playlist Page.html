@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="styles-playlist.css">
 	<link rel="stylesheet" type="text/css" href="bell-icon.css">
 	<link rel="stylesheet" type="text/css" href="c-style.css">
+	<link rel="stylesheet" type="text/css" href="styles-playlist-responsive.css">
 
 	<!-- link animate.css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -37,7 +38,7 @@
 				</a>
 			</div>
 		</div>
-		<div class = "favourites-button">
+		<div id = "menu" class = "favourites-button">
 			<div id = "fav-button">
 				Favourites			
 			</div>
@@ -67,7 +68,15 @@
 
 	<!-- Main + Aside-->
 	<div id ="main-aside" class="animate__animated animate__backInUp">
-		<main>
+		
+		<div id="slider"> 
+			<!-- <label for="toggle"> <span> More  </span>  <i class="fas fa-angle-double-left"></i> </label>
+			<input type="checkbox" id="toggle">   -->
+			<span> MORE  </span>  <i class="fas fa-angle-double-left"></i>
+		</div>
+
+		<!-- MAIN SECTION -->
+		<main class ="main-section">
 			<div id="jumbotron-container" class="gradient-animation">
 				
 				<div class="jumbotron-cover-pic">
@@ -316,8 +325,9 @@
 					</div>
 			</div>
 		</main>
-		
-		<aside>
+	
+		<!-- ASIDE SECTION -->
+		<aside class = "aside-section">
 			<div class="aside-section-heading">
 				<h1> Similar Artists</h1>
 				<span> View ALL</span>
@@ -534,7 +544,8 @@
 			</div>
 		</aside>
 	</div>
-	<!-- Footer -->
+	
+	<!-- Footer SECTION-->
 	<div id = "footer" class="animate__animated animate__bounceIn">
 		
 		<div class="footer-container">
@@ -575,8 +586,8 @@
 		<div id = "cb2" class = "create-border">
 		</div>
 
-		<span style="color: white; font-family: cursive;">Audio: High</span>
-		<div style="color: white; margin-left: 2.5vw; margin-top: 5px;"><i class="fas fa-random"></i></div>
+		<p>Audio: High</p>
+		<div id = "random-icon"><i class="fas fa-random"></i></div>
 
 		<div id = "cb3" class = "create-border">
 		</div>
