@@ -1,5 +1,5 @@
 body{
-	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	background-image: linear-gradient(to left, black 0%, #434343 50%, black 100%);
 	/*position: absolute;*/
 	/*color: white;*/
 }
@@ -13,8 +13,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .header{
 	/*border: 1px solid white;*/
-	background-image: linear-gradient(to left, #434343 5%, black 100%);
-	
+	background-image: linear-gradient(to right, #434343 5%, black 100%);	
 	height: 85px;
 	min-height: 80px;
 	width: auto;
@@ -89,11 +88,12 @@ h1, h2, h3, h4, h5, h6, p{
 	position: relative;
 	min-width: 25%;
 	overflow: hidden;
+	color: white;
 	/*z-index: 10000;*/
 }
 
 .search-bar form input{
-	background-color: pink;
+	background-color: #0C0C0C;
 	border-radius: 25%;
 	text-align: center;
 	font-size: 20px;
@@ -155,13 +155,14 @@ button:focus {
 	width: 90%;
 	position: fixed;
 	left: 2.5%;
-	top: 15vh;
+	top: 12vh;
 	right: 2.5%;
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
+	/*padding-top: 10vh;*/
 	/*flex-direction: row;*/
 	justify-content: space-around;
 }
@@ -173,6 +174,7 @@ main{
 	/*position: absolute; */
 	/*border: 2px solid white;*/
 	padding-bottom: 14%;
+	padding-top: 4vh;
 	height: inherit;
 	width: 75%;
 	

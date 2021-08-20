@@ -2,15 +2,22 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<!-- viewport Meta-Tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- link fontawesome -->
 	<script src="https://kit.fontawesome.com/2f27dacbd8.js" crossorigin="anonymous"></script>	
 	<title>
 		Queen
 	</title>
+	<!-- favicon -->
 	<link rel="shortcut icon" type = "image/x-con" href = "media/Untitled.png">
+	<!-- link css files -->
 	<link rel="stylesheet" type="text/css" href="styles-playlist.css">
 	<link rel="stylesheet" type="text/css" href="bell-icon.css">
 	<link rel="stylesheet" type="text/css" href="c-style.css">
+
+	<!-- link animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 	<!-- Header -->
@@ -20,12 +27,14 @@
 				<img src="media/Untitled.png">			
 			</div>
 			<div class="logo-name">
-				<h1>
-					Cisten
-				</h1>
-				<h2>
-					Studio
-				</h2>
+				<a href="index.html" style="text-decoration: none;">
+					<h1 style="color: white;">
+						Cisten
+					</h1>
+					<h2 style="color: #ffc5c9; text-transform: uppercase; ">
+						Studio
+					</h2>
+				</a>
 			</div>
 		</div>
 		<div class = "favourites-button">
@@ -57,7 +66,7 @@
 	</nav>
 
 	<!-- Main + Aside-->
-	<div id ="main-aside">
+	<div id ="main-aside" class="animate__animated animate__backInUp">
 		<main>
 			<div id="jumbotron-container" class="gradient-animation">
 				
@@ -526,7 +535,7 @@
 		</aside>
 	</div>
 	<!-- Footer -->
-	<div id = "footer">
+	<div id = "footer" class="animate__animated animate__bounceIn">
 		
 		<div class="footer-container">
 			<div class="aside-song-list">
