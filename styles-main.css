@@ -7,7 +7,9 @@ body{
 h1, h2, h3, h4, h5, h6, p{
 	margin: 0px;
 }
-/*header class*/
+
+/*-----------------------------                header class              --------------------*/
+
 .header{
 	/*border: 1px solid white;*/
 	
@@ -36,6 +38,10 @@ h1, h2, h3, h4, h5, h6, p{
 
 .header > div{
 	display: inline-block;
+}
+
+.logo-heading{
+	min-width: 195px;
 }
 
 .logo-heading > div{
@@ -149,6 +155,7 @@ button:focus {
 	width: 90%;
 	position: fixed;
 	left: 5%;
+	right: 5%;
 	top: 11vh;
 	margin-left: auto;
 	margin-right: auto;
@@ -156,20 +163,22 @@ button:focus {
 	display: flex;
 	flex-wrap: wrap;
 	/*flex-direction: row;*/
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 main{
 	display: inline-block;
 	/*position: absolute; */
-	display: flex;
+	
 	/*border: 2px solid white;*/
-	padding-bottom: 12vh;
+	padding-bottom: 12%;
 	height: inherit;
 	width: 75%;
 	flex-direction: row;
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	overflow: scroll;
 	top: 0;
 	left: 0;
@@ -178,9 +187,9 @@ main{
 main > div{
 	/*position: absolute;*/
 	/*display: inline-block;*/
-	position: relative;
-	height: auto;
-	padding: 5px;
+	/*position: relative;*/
+	/*height: auto;*/
+	/*padding: 5px;*/
 	margin: 10px;
 	/*border: 2px ridge red;*/
 	width: 100%;
@@ -191,23 +200,24 @@ main > div{
 																			/*Image-Carousel*/
 
 #image-carousel{
-	height: 43vh;
+	/*height: 43vh;*/
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
 	margin-top: 9vh;
-	margin-bottom: 8vh;
+	margin-bottom: 8%;
 	transition: all 1s ease-in-out;
 }
 
 #image-carousel div{
 	display: inline-block;
 	/*border: 1px solid white;*/
+	min-width: 220px;
 	width: 30%;
-	height: 100%;
-	transition: all 0.5s ease-in-out;
+	height: 41vh;
+	transition: all 0.4s ease-in-out;
 	z-index: 50;
 }
 #image-carousel div img{
@@ -255,7 +265,7 @@ main > div{
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	height: 90%;
+	height: auto;
 	align-items: center;
 	box-sizing: border-box;
 }
@@ -392,22 +402,22 @@ main > div{
 
 #artists{
 	box-sizing: border-box;
-	height: 27vh;
+	height: auto;
 }
 
 .artist-container{
 	width: 100%;
-	height: 24vh;
+	height: auto;
 	/*border: 2px solid yellow;*/
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
 .artist-content{
-	height: 99%;
-	width: 15.5%;
+	height: auto;
+	/*width: 15.5%;*/
 	/*border: 1px solid white;*/
 	display: flex;
 	flex-direction: column;
@@ -416,8 +426,8 @@ main > div{
 }
 
 .artist-content img{
-	width: 100%;
-	height: 85%;
+	width: 18vh;
+	height: 18vh;
 	border-radius: 50%;
 }
 
@@ -426,10 +436,14 @@ main > div{
 	font-family: fantasy;
 }
 
-.artist-content > a{
+.artist-content{
 	position: relative;
-	left: -11vh;
-	top: 8.65vh;
+}
+
+.artist-content > a{
+	position: absolute;
+	left: 7.8vh;
+	top:7.3vh;
 	opacity: 0;  
 	color: white; 
 }
@@ -454,11 +468,13 @@ main > div{
 	/*border: 2px solid yellow;*/
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	align-items: center;
 	/*flex-direction: column;*/
 	align-items: center;
 	box-sizing: border-box;
 	margin-top: 40px;
+	/*min-width: 180px;*/
 	background-image: linear-gradient(to top, rgb(61,70,79) 2%, #e7627d 18%, #b8235a 34%, #801357 45%, #3d1635 62%, #1c1a27 81%);;
 }
 
@@ -477,15 +493,15 @@ main > div{
 }
 
 .genre-container{
-	width: 70.1%;
-	height: 38vh;
+	width: 68%;
+	height: inherit;
 	/*border: 1px solid white;*/
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 	column-gap: 4px;
-	position: relative;
+	/*position: relative;*/
 }
 
 #station-1{
@@ -549,8 +565,8 @@ main > div{
 }
 
 #station-1 img{
-	height: 8rem;
-	width: 8rem;
+	height: 35%;
+	width: 35%;
 }
 
 .station-boxes div span{
@@ -559,9 +575,9 @@ main > div{
 
 .genre-box{
 	/*border: 1px solid white;*/
-	height: 46%;
-	width: 20%;
-	border-radius: 50%;
+	/*height: 46%;
+	width: 20%;*/
+	/*border-radius: 50%;*/
 	color: white;
 	overflow: hidden;
 	position: relative;
@@ -574,14 +590,16 @@ main > div{
 	left: 3.5rem;
 	z-index: 4;
 	color: white;
-	font-size: 24px;
+	font-size: 1.5rem;
 	text-shadow: 5px 5px 5px black;
 	font-family: serif;
 }
 
 .genre-box img{
-	width: 100%;
-	height: 100%;
+	width: 17vh;
+	height: 17vh;
+	margin: 4px;
+	border-radius: 50%;
 	opacity: 0.6;
 }
 
@@ -591,11 +609,13 @@ main > div{
 
 
 														/*Leisure*/
-.leisure{
+#leisure{
+	width: 100%;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	/*margin-top: 10vh !important;*/
 }
 
@@ -605,6 +625,7 @@ main > div{
 	/*border: 1px solid blue;*/
 	height: 30vh;
 	width: 32.8%;
+	min-width: 232px;
 	overflow: hidden;
 	position: relative;
 }
@@ -629,7 +650,7 @@ main > div{
 .leisure-name{
 	position: absolute;
 	top: 44%;
-	left: 39%;
+	left: 8vw;
 	color: white;
 	z-index: 3;
 }
@@ -654,6 +675,7 @@ main > div{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	height: auto;
 	align-items: center;
 	justify-content: space-around;
 	/*column-gap: 3px;*/
@@ -663,8 +685,8 @@ main > div{
 
 .trending-card{
 	/*border: 1px solid red;*/
-	height: 30vh;
-	width: 10vw;
+	height: auto;
+	width: 16%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -672,6 +694,7 @@ main > div{
 	justify-content: flex-start;
 	overflow: hidden;
 	color: white;
+	min-width: 120px;
 	row-gap: 8px;
 }
 .trending-card div{
@@ -684,7 +707,7 @@ main > div{
 }
 
 .trending-card div img{
-	height: 100%;
+	height: 22vh;
 	width: 100%;
 }
 
@@ -724,6 +747,10 @@ aside{
 
 }
 
+#slider{
+	display: none;
+}
+
 .aside-header-container{
 	margin-top: 7vh;
 	/*border: 1px solid yellowgreen;*/
@@ -748,11 +775,14 @@ aside .menu-content a:hover{
 }
 
 .aside-song-list{
+	width: 100%;
+	height: auto;
+
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	row-gap:  10px;
 	color: white;
 
@@ -760,12 +790,13 @@ aside .menu-content a:hover{
 
 .aside-song-container{
 	/*border: 1px solid red;*/
-	height: 5vw;
+	height: 10vh;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
+	min-width: 230px;
 }
 
 .aside-song-container > div{
@@ -801,12 +832,12 @@ aside .menu-content a:hover{
 
 .song-pic{
 	height: 90%;
-	width: 23% !important;
+	width: 23%;
 }
 
 .song-pic img{
-	height: 100%;
-	width: 100%;
+	height: 90%;
+	width: 75%;
 }
 
 .favourite-icon{
@@ -835,8 +866,13 @@ aside .menu-content a:hover{
 	align-items: center;
 }
 
+.footer-container .aside-song-list{
+	min-width: 270px;
+}
+
 .footer-container .aside-song-list .aside-song-container{
-	height: 4.4vw;
+	height: inherit;
+	min-width: 270px;
 	/*width: 100%;*/
 }
 
@@ -864,17 +900,18 @@ aside .menu-content a:hover{
 	/*color: white;*/
 
 }
-
+.step-icon{
+	z-index: 5;
+}
 
 .player-controller audio{
 	height: 80%;
 	width: 55%;
 	background-color: #F1F3F4;
-	border-radius: 25%;
+	border-radius: 12%;
 	transform: scale(1.2);
-	margin-left: 1.2rem;
-	margin-right: 1.2rem;
-
+	margin-left: 1.0rem;
+	margin-right: 1.0rem;
 }
 
 .player-controller div{
@@ -892,10 +929,9 @@ aside .menu-content a:hover{
 	margin-top: 1vh;
 }
 
-#player-controller i{
-	color: white;
-	font-size: 1.1rem;
-	margin: 1.3rem;
+#footer p{
+	color: white; 
+	font-family: cursive;
 }
 
 .step-icon i{
@@ -907,11 +943,17 @@ aside .menu-content a:hover{
 	position: relative;
 	right: 0;
 	color: white;
+	margin-right: 4vh;
 }
 
 #expand i{
 	font-size: 1.5rem;
-	margin-left: 1.6vw;
+	margin-left: 1.2rem;
 }
 
 
+#random-icon{
+	color: white; 
+	margin-left: 2.5vw; 
+	margin-top: 5px;
+}

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<!-- viewport Meta-Tag -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1">
 	<!-- link fontawesome -->
 	<script src="https://kit.fontawesome.com/2f27dacbd8.js" crossorigin="anonymous"></script>	
 	<title>
@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="styles-main.css">
 	<link rel="stylesheet" type="text/css" href="bell-icon.css">
 	<link rel="stylesheet" type="text/css" href="c-style.css">
+	<link rel="stylesheet" type="text/css" href="styles-main-responsive.css">
 
 	<!-- link animate.css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -36,7 +37,7 @@
 				</a>
 			</div>
 		</div>
-		<div class = "favourites-button">
+		<div id = "menu" class = "favourites-button">
 			<div id = "fav-button">
 				Favourites			
 			</div>
@@ -65,7 +66,12 @@
 	</nav>
 	
 	<div id ="main-aside" class="animate__animated animate__backInUp">
-		<main>
+		<div id="slider"> 
+			<!-- <label for="toggle"> <span> More  </span>  <i class="fas fa-angle-double-left"></i> </label> -->
+			<input type="checkbox" id="toggle">  
+			<span> More  </span>  <i class="fas fa-angle-double-left"></i>
+		</div>
+		<main class="main-section">
 			<div id = "image-carousel">
 				<div>
 					<img src="https://f4.bcbits.com/img/a3972064715_10.jpg">
@@ -471,7 +477,7 @@
 				</div>
 			</div>
 		</main>
-		<aside>
+		<aside class="aside-section">
 			<div class="aside-header-container">
 				<h1>
 					My Playlist
@@ -918,14 +924,13 @@
 					</div>
 					<div class="favourite-icon">
 						<i class="fas fa-heart"></i>
-
 					</div>
 					<i class="fas fa-cloud-download-alt"></i>
-				</div>	
+				</div>
 			</div>
 		</div>
 
-		<div class = "create-border">
+		<div id = "cb1" class = "create-border">
 		</div>
 
 		<div class = "player-controller">
@@ -937,13 +942,13 @@
 			<!-- <div class="shuffle"> <i class="fas fa-random"></i> </div> -->
 		</div>
 		
-		<div class = "create-border">
+		<div id = "cb2" class = "create-border">
 		</div>
 
-		<span style="color: white; font-family: cursive;">Audio: High</span>
-		<div style="color: white; margin-left: 2.5vw; margin-top: 5px;"><i class="fas fa-random"></i></div>
+		<p>Audio: High</p>
+		<div id = "random-icon"><i class="fas fa-random"></i></div>
 
-		<div class = "create-border">
+		<div id = "cb3" class = "create-border">
 		</div>
 
 		<a href="Single Playlist Page.html"> <div id="expand"><i class="fas fa-angle-up"></i>  </div> </a>
