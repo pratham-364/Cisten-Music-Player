@@ -713,7 +713,7 @@ aside{
 .song-tile-desc span{
 	font-size: 0.7rem;
 	font-weight: lighter;
-	color: var(--secondary-text-color);
+	/*color: var(--secondary-text-color);*/
 }
 
 
@@ -724,7 +724,7 @@ aside{
 .song-tile-icon i{
 	font-size: 1rem;
 
-	color: var(--secondary-text-color);
+	/*color: var(--secondary-text-color);*/
 	margin: 6px;
 	transition: all ease-in-out 0.2s;
 }

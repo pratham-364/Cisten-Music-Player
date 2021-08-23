@@ -16,7 +16,6 @@ aside::-webkit-scrollbar{
 
     padding: 1rem 1rem;
 
-    background-color: var(--dropdown-background-color);
 
     position: absolute;
     top: 1vh;
@@ -31,7 +30,6 @@ aside::-webkit-scrollbar{
     overflow: hidden;
     opacity: 0;
 
-    background-color: var(--dropdown-background-color);
     box-shadow: 0px 4px 8px 1px black;
     z-index: 600;
 
@@ -67,7 +65,6 @@ aside::-webkit-scrollbar{
 
 .nav-dropdown-list a{
     text-decoration: none;
-    color: var(--dropdown-text-color);
 }
 
 .nav-list-item{
@@ -79,13 +76,8 @@ aside::-webkit-scrollbar{
     line-height: 1.5;
 
 
-    border-bottom: 2px solid var(--dropdown-underline-color);
+    /*border-bottom: 2px solid var(--dropdown-underline-color);*/
 }
-
-.nav-list-item i{
-   color: var(--dropdown-underline-color);
-}
-
 
 
 
@@ -98,17 +90,6 @@ aside::-webkit-scrollbar{
 }
 
 
-
-
-/*.list-item div{
-    height: 15vh;
-    width: 15vh;
-}
-
-.list-item div img{
-    height: 100%;
-    width: 100%;
-}*/
 
 /*  ------------------ General Drop Down Class   --------------------------------*/
 
@@ -203,16 +184,3 @@ aside::-webkit-scrollbar{
     height: 160px;
     width: 330px;
 }
-
-
-
-
-/*.list-item div{
-    height: 15vh;
-    width: 15vh;
-}
-
-.list-item div img{
-    height: 100%;
-    width: 100%;
-}*/
